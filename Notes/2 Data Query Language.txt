@@ -1,0 +1,28 @@
+
+What is Data Query Language (DQL)?
+Data Query Language (DQL) is a subset of SQL (Structured Query Language) used to retrieve and manipulate data stored in a database. 
+It focuses on querying the database to extract specific information based on user-defined criteria.
+
+Why is Data Query Language (DQL) important?
+DQL is important because it allows users to interact with databases by retrieving only the data they need. 
+This helps in making informed decisions, analyzing trends, and gaining insights from the stored information.
+
+Who uses Data Query Language (DQL)?
+DQL is used by database administrators, data analysts, software developers, and anyone who needs to extract and analyze data from a database.
+
+When is Data Query Language (DQL) used?
+DQL is used whenever there's a need to retrieve specific data from a database. 
+This could be for generating reports, conducting analyses, displaying information in applications, or making data-driven decisions.
+
+Where is Data Query Language (DQL) used?
+DQL is used within database management systems (DBMS) or relational database systems. 
+It's embedded in applications, websites, and software that need to interact with databases to retrieve and manipulate data.
+
+How does Data Query Language (DQL) work?
+DQL works by using specific query statements written in SQL to communicate with a database. 
+These query statements define what data to retrieve, how to filter it, and how to arrange and present the results. 
+The database management system then processes these queries and returns the requested data.
+
+In summary, Data Query Language (DQL) is a crucial component of database management. 
+It enables users to retrieve specific information from databases using structured query statements, aiding in data analysis, decision-making, and application development.
+------------------

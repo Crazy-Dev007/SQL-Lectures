@@ -1,0 +1,18 @@
+Select statement 1-2 Aug
+Where statement 
+
+Distinct statement. 
+Order by statement 3 Aug 
+
+SQL categories.   4 Aug - 7 Aug
+DDL, DML, DCL, TCL, DQL
+
+SQL function
+Min, max , count , avg, sum
+
+Like Operator Aug 8
+
+Constraints Aug 10 - 14
+Pk , fk, check , unique   
+
+SQL join Aug 16

@@ -1,0 +1,58 @@
+1. What is DDL?
+DDL stands for Data Definition Language. 
+It is a category of  statements that deal with defining and managing the structure of a database, such as creating, modifying, and deleting database objects like tables, indexes, and constraints.
+
+2. Who uses DDL?
+Database administrators (DBAs), developers, and anyone responsible for designing, creating, and maintaining a database use DDL statements.
+
+3. When is DDL used?
+DDL is used during the initial setup of a database, as well as when changes to the structure of the database are required. 
+This includes tasks like creating new tables, altering existing ones, and defining constraints.
+
+4. Where is DDL used?
+DDL statements are executed in the context of a database management system (DBMS), such as My, Postgre,  Server, Oracle, etc. 
+They are executed through query interfaces, command-line tools, or integrated development environments.
+
+5. Why is DDL important?
+DDL is crucial for defining the structure and integrity rules of a database. 
+It helps ensure that data is organized properly, relationships between tables are maintained, and data remains consistent and accurate.
+
+6. How does DDL work?
+DDL statements are  commands used to perform various actions related to the database structure:
+
+CREATE: 
+    Used to create new database objects like tables, indexes, and views.
+ALTER: 
+    Used to modify the structure of existing objects, such as adding or dropping columns, renaming objects, or changing data types.
+DROP: 
+    Used to delete existing objects like tables, indexes, and views from the database.
+TRUNCATE: 
+    Used to remove all data from a table while keeping its structure intact.
+COMMENT: 
+    Used to add comments or descriptions to database objects.
+RENAME: 
+    Used to change the name of an existing object.
+Constraints: 
+    DDL also includes defining constraints like PRIMARY KEY, FOREIGN KEY, UNIQUE, and CHECK to maintain data integrity.
+
+Example DDL Statements:
+
+Creating a table:
+    CREATE TABLE Employees (
+        EmployeeID INT PRIMARY KEY,
+        FirstName VARCHAR(50),
+        LastName VARCHAR(50),
+        DepartmentID INT
+);
+
+
+Modifying a table (adding a column):
+    ALTER TABLE Employees
+    ADD Email VARCHAR(100);
+
+
+Deleting a table:
+    DROP TABLE Employees;
+
+
+------------------
