@@ -1,0 +1,63 @@
+You:
+
+
+SQL constraint (  Check ) Explain with Example ? In Detail ? 
+SQL constraint ( Check ) Explain With Wh Questions ?
+------------------
+ChatGPT:
+
+
+A CHECK constraint in SQL is used to enforce certain conditions on the data that can be inserted or updated in a table. This constraint ensures that the values in a specific column or combination of columns adhere to a specified condition or expression. If the condition evaluates to false for any row being inserted or updated, the database system will reject the operation, maintaining the integrity of the data.
+
+Let's break down the concept of CHECK constraints using the "Wh" questions:
+
+What is a CHECK constraint?
+
+A CHECK constraint is a rule defined at the column level within a table, specifying a condition that the data in that column must satisfy.
+
+Why is a CHECK constraint used?
+
+CHECK constraints are used to maintain data integrity and ensure that the values entered into a column meet a certain criteria or condition. They help prevent invalid or inappropriate data from being inserted into the table.
+
+Where can CHECK constraints be applied?
+
+CHECK constraints are applied at the column level of a table. They can also be used in combination with CREATE TABLE or ALTER TABLE statements.
+
+When is a CHECK constraint applied?
+
+CHECK constraints are applied when data is inserted or updated in a table. The specified condition is evaluated for each row being inserted or updated, and if the condition is not met, the operation is rejected.
+
+How is a CHECK constraint defined?
+
+A CHECK constraint is defined during the creation of a table using the CREATE TABLE statement. It is specified after the column definition and uses the CHECK keyword followed by a condition or expression enclosed in parentheses.
+
+sql
+Copy code
+CREATE TABLE Employee (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    CONSTRAINT CHK_Age CHECK (Age >= 18) -- Example CHECK constraint
+);
+
+
+How does a CHECK constraint work?
+
+When a new row is inserted or an existing row is updated in the table, the CHECK constraint's condition is evaluated for the values in the specified column(s). If the condition evaluates to false, the database system prevents the operation and returns an error.
+
+Can you provide an example of a CHECK constraint?
+
+Sure! In the example provided above, the CHECK constraint ensures that the Age column must have a value greater than or equal to 18. This prevents anyone under the age of 18 from being added to the Employee table.
+
+If an attempt is made to insert a row with an Age value less than 18:
+
+sql
+Copy code
+INSERT INTO Employee (EmployeeID, FirstName, LastName, Age) VALUES (1, 'John', 'Doe', 16);
+
+
+The operation would be rejected, and an error would be raised due to the CHECK constraint violation.
+
+In summary, CHECK constraints are a powerful tool for ensuring data integrity by enforcing specific conditions on columns in a SQL table. They help maintain the validity and accuracy of the data stored in the database.
+------------------
