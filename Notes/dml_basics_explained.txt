@@ -1,0 +1,42 @@
+You:
+
+
+Data manipulation language explain with wh questions?
+------------------
+ChatGPT:
+
+
+Sure, I'd be happy to explain Data Manipulation Language (DML) using the "Wh" questions:
+
+What is DML?
+DML stands for Data Manipulation Language. It's a subset of SQL (Structured Query Language) used to interact with and manipulate data stored in a database.
+
+Why is DML used?
+DML is used to perform various operations on data within a database, such as inserting new records, updating existing records, deleting records, and querying data to retrieve specific information.
+
+Where is DML used?
+DML is used within database management systems (DBMS) like MySQL, PostgreSQL, Oracle, and others. It's often used by software applications to interact with the underlying database.
+
+When is DML used?
+DML is used whenever there's a need to change or retrieve data in a database. This could be in real-time as users interact with an application or when batch processes need to modify data.
+
+Who uses DML?
+Database administrators, software developers, and anyone working with databases uses DML to manage and manipulate data. End-users might indirectly use DML through applications they interact with.
+
+How is DML different from other SQL components?
+DML is different from other SQL components like Data Definition Language (DDL) and Data Control Language (DCL). While DDL is used to define the structure of the database (tables, indexes, etc.), DCL is used to manage access rights. DML focuses on modifying and querying data.
+
+How does DML work?
+DML works by using specific SQL statements like:
+
+SELECT: Retrieves data from one or more tables.
+INSERT: Adds new data into a table.
+UPDATE: Modifies existing data in a table.
+DELETE: Removes data from a table.
+These statements are executed against the database to perform the desired operations.
+
+What are the common mistakes to watch out for when using DML?
+Common mistakes include forgetting to include a WHERE clause when updating or deleting data, using incorrect column names, not handling NULL values properly, and not properly sanitizing inputs to prevent SQL injection.
+
+In summary, Data Manipulation Language (DML) is a crucial part of working with databases, allowing you to manipulate and retrieve data through SQL statements.
+------------------
