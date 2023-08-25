@@ -1,0 +1,59 @@
+You:
+
+
+SQL UPDATE Explain with Example ? In Detail ? 
+SQL UPDATE Explain With Wh Questions ?
+------------------
+ChatGPT:
+
+
+Certainly! The SQL UPDATE statement is used to modify existing records in a database table. It allows you to change the values of one or more columns for specific rows in the table. Let's break down the UPDATE statement using the "Wh-questions": What, Why, When, Where, Who, and How.
+
+1. What does the UPDATE statement do?
+The UPDATE statement is used to modify existing records in a database table. It allows you to change the values of one or more columns for specific rows in the table, based on certain conditions.
+
+2. Why would you use the UPDATE statement?
+You would use the UPDATE statement when you need to make changes to the data in your database. This could include correcting errors, updating outdated information, or modifying records for various business needs.
+
+3. When should you use the UPDATE statement?
+You should use the UPDATE statement when you have a need to alter the data in your database. Common scenarios include when customer information changes, when you need to mark items as sold or returned, or when you need to correct inaccurate data.
+
+4. Where does the UPDATE statement operate?
+The UPDATE statement operates on a specific table within a database. You provide the name of the table you want to modify, along with the columns and values you want to change.
+
+5. Who performs the UPDATE statement?
+Database administrators, developers, or users with appropriate permissions can perform the UPDATE statement. Only users with the necessary privileges can modify data in a database.
+
+6. How is the UPDATE statement used?
+The UPDATE statement is used in SQL with the following syntax:
+
+sql
+Copy code
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+table_name: The name of the table you want to update.
+SET: Specifies the columns you want to modify and the new values you want to assign to them.
+column1 = value1, column2 = value2, ...: This part lists the columns you want to update and their new values.
+WHERE: Specifies the condition that determines which rows should be updated. If omitted, all rows in the table will be updated.
+condition: The condition used to filter the rows that will be updated. If the condition is met, the corresponding rows will be modified.
+
+Example:
+Let's say we have a table named employees with columns employee_id, first_name, last_name, and salary. We want to give a salary raise of 10% to employees who have been with the company for more than 5 years.
+
+sql
+Copy code
+UPDATE employees
+SET salary = salary * 1.10
+WHERE years_of_service > 5;
+
+
+In this example:
+
+employees is the table name.
+SET salary = salary * 1.10 updates the salary column by multiplying it by 1.10 (10% raise).
+WHERE years_of_service > 5 is the condition that filters out employees with more than 5 years of service.
+
+This SQL UPDATE statement will increase the salaries of qualifying employees by 10%.
+------------------
