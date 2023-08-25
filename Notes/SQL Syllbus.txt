@@ -16,3 +16,14 @@ Constraints Aug 10 - 14
 Pk , fk, check , unique   
 
 SQL join Aug 16
+
+SQL Union operator Aug 17
+
+SQL Server Views Aug 18 Aug To 21
+
+SQL User Defined Function 22 Aug
+
+SQL  Stored Procedures 23 Aug 24
+
+SQL Subquery 25 Aug
+
